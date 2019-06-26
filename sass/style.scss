@@ -1,0 +1,11 @@
+@import "mixins.scss";
+@import "global/normalize.scss";
+@import "global/fonts.scss";
+@import "variables.scss";
+
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: normal;
+}

@@ -1,0 +1,19 @@
+/*@mixin container {
+  box-sizing: border-box;
+  max-width: 320px;
+  margin: 0 auto;
+  padding-left: 8px;
+  padding-right: 4px;
+
+  @media (min-width: $bp-tablet){
+    max-width: 768px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  @media (min-width: $bp-desktop){
+    max-width: 1124px;
+    padding-left: 84px;
+    padding-right: 84px;
+  }
+}*/

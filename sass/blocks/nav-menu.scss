@@ -1,0 +1,91 @@
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+
+    font-family: "GentiumBookBasic", serif;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 1.2;
+
+    &--closed {
+        display: none;
+    }
+
+    @media (max-width: $bp-xl) {
+        font-size: 18px;
+    }
+
+    @media (max-width: $bp-l) {
+        align-items: stretch;
+        flex-direction: column;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+}
+
+.nav-menu__toggle {
+    display: none;
+
+    @media (max-width: $bp-l) {
+        position: absolute; // можно по-другому?
+        display: block;
+        margin-top: 52px; 
+        background: none;
+        border: none;
+        color: #ffffff;
+        cursor: pointer;
+    }
+}
+
+.nav-menu__link {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    padding: 0 16px;
+    margin: auto 10px;
+
+    @media (max-width: $bp-xl) {
+        padding: 0 12px;
+        margin: 0 8px;
+    }
+
+    @media (max-width: $bp-l) {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    
+
+    &:hover {
+
+        &:before {
+            content: '';
+            position: absolute;
+            display: block;
+            height: 3px;
+            width: 90%;
+            top: -48px;
+            left: 5%;
+            background-color: #c8c5bc;
+
+            @media (max-width: $bp-xl) {
+                top: -50px;
+            }
+
+            @media (max-width: $bp-l) {
+                display: none;
+            }
+
+        }
+
+        @media (max-width: $bp-l) {
+            border: none;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background-color: rgba(0,0,0,0.3);
+            text-decoration: none;
+        }
+    }
+}

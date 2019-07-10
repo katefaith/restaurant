@@ -5,9 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page Title</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css" />
   </head>
 
   <body>
-    <h1>Hello</h1>
+    <header class="page-header">
+      <div class="page-header__wpapper">
+        <div class="page-header__nav  wrapper">
+          <img class="page-header__logo" src="img/logo.png" alt="logo" />
+
+          <nav class="page-header__menu  nav-menu">
+              <a class="nav-menu__link" href="#">Home</a>
+              <a class="nav-menu__link" href="#about">About</a>
+              <a class="nav-menu__link" href="">Ingrigients</a>
+              <a class="nav-menu__link" href="">Menu</a>
+              <a class="nav-menu__link" href="">Reviews</a>
+              <a class="nav-menu__link" href="">Reservations</a>
+          </nav>
+          <button class="nav-menu__toggle">&#9776;</button>
+
+          <div class="page-heade__socials  socials">
+            <a class="socials__item" href="https://twitter.com" target="_blank"
+              ><i class="fa fa-twitter"></i
+            ></a>
+            <a
+              class="socials__item"
+              href="https://www.youtube.com/"
+              target="_blank"
+              ><i class="fa fa-youtube"></i
+            ></a>
+            <a class="socials__item" href="https://facebook.com" target="_blank"
+              ><i class="fa fa-facebook"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-header__promo  wrapper">
+        <h1 class="page-header__title">
+          the right ingredients for the right food
+        </h1>
+        <div class="page-header__btns">
+          <a class="btn" href="#">Book a table</a>
+          <a class="btn" href="#">See the menu</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="page__main">
+      <section class="about">
+        <h2 id="about"></h2>
+      </section>
+    </main>
+
+    <footer class="page__footer"></footer>
   </body>
 </html>

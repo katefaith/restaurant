@@ -3,9 +3,41 @@
 @import "global/fonts.scss";
 @import "variables.scss";
 
+@import "blocks/page-header.scss";
+@import "blocks/nav-menu.scss";
+@import "blocks/socials.scss";
+@import "blocks/btn.scss";
+
 body {
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: normal;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1250px;
+    padding-left: 70px;
+    padding-right: 70px;
+
+    @media (max-width: $bp-xl) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    @media (max-width: $bp-m) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    @media (max-width: $bp-s) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'YesevaOne', serif;
 }

@@ -1,0 +1,68 @@
+.about {
+    padding-top: 60px;
+    padding-bottom: 25px;
+    background-image: url(../img/about-bg.jpg);
+}
+
+.about__wrapper {
+    @include wrapper;
+    display: flex;
+
+    @media (max-width: $bp-l) {
+        flex-direction: column-reverse;
+    }
+}
+
+.about__info {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 110px;
+    margin-right: 25px;
+    text-align: center;
+    line-height: 1.5;
+
+    @media (max-width: $bp-l) {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.about__title {
+    position: relative;
+    margin-top: 35px;
+    margin-bottom: 45px;
+    font-size: 36px;
+    font-weight: normal;
+    color: #cc9900;
+    text-align: center;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 247px;
+        height: 24px;
+        background: url('/img/divider-gold.png');
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -35px;
+    }
+}
+
+.about__cook {
+    margin-top: 35px;
+    margin-left: 65px;
+}
+
+.about__image {
+    max-width: 50%;
+    height: auto;
+    margin-right: 65px;
+    align-self: center;
+
+    @media (max-width: $bp-l) {
+        max-width: 100%;
+        margin-right: 0;
+    }
+}

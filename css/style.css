@@ -630,6 +630,99 @@ template {
       max-width: 100%;
       margin-right: 0; } }
 
+.ingrigients {
+  display: flex;
+  background-image: url(../img/ingrigients-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff; }
+
+.ingrigients__wrapper {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1250px;
+  display: flex;
+  justify-content: flex-end; }
+  @media (max-width: 1200px) {
+    .ingrigients__wrapper {
+      padding-left: 40px;
+      padding-right: 40px; } }
+  @media (max-width: 768px) {
+    .ingrigients__wrapper {
+      padding-left: 30px;
+      padding-right: 30px; } }
+  @media (max-width: 480px) {
+    .ingrigients__wrapper {
+      padding-left: 15px;
+      padding-right: 15px; } }
+
+.ingrigients__info {
+  flex-direction: column;
+  display: flex;
+  width: 35%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 40px;
+  padding: 70px 65px;
+  text-align: center;
+  line-height: 1.5;
+  background-color: rgba(0, 0, 0, 0.5); }
+  @media (max-width: 1200px) {
+    .ingrigients__info {
+      width: auto;
+      margin-right: 0; } }
+  @media (max-width: 768px) {
+    .ingrigients__info {
+      padding-left: 30px;
+      padding-right: 30px; } }
+  @media (max-width: 480px) {
+    .ingrigients__info {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      padding-top: 40px;
+      padding-bottom: 40px; } }
+
+.ingrigients__title {
+  position: relative;
+  font-size: 36px;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 60px; }
+  .ingrigients__title::before {
+    content: '';
+    position: absolute;
+    width: 247px;
+    height: 24px;
+    background: url("/img/divider-white.png");
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -35px; }
+
+.ingrigients__text {
+  margin: 0;
+  margin-bottom: 70px; }
+  @media (max-width: 480px) {
+    .ingrigients__text {
+      margin-bottom: 30px; } }
+
+.ingrigients__icons {
+  display: flex;
+  justify-content: space-around; }
+  .ingrigients__icons img {
+    margin-left: 15px;
+    margin-right: 15px;
+    height: auto;
+    max-width: 30%; }
+    @media (max-width: 768px) {
+      .ingrigients__icons img {
+        margin-left: 5px;
+        margin-right: 5px; } }
+  @media (max-width: 1200px) {
+    .ingrigients__icons {
+      justify-content: center; } }
+
 body {
   font-family: 'Lato', Arial, Helvetica, sans-serif;
   font-weight: normal;

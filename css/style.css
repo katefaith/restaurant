@@ -705,28 +705,133 @@ template {
     transform: translateX(-50%);
     bottom: -35px; }
 
-.ingregients__text {
+.ingredients__text {
   margin: 0;
   margin-bottom: 70px; }
   @media (max-width: 480px) {
-    .ingregients__text {
+    .ingredients__text {
       margin-bottom: 30px; } }
 
-.ingregients__icons {
+.ingredients__icons {
   display: flex;
   justify-content: space-around; }
-  .ingregients__icons img {
+  .ingredients__icons img {
     margin-left: 15px;
     margin-right: 15px;
     height: auto;
     max-width: 30%; }
     @media (max-width: 768px) {
-      .ingregients__icons img {
+      .ingredients__icons img {
         margin-left: 5px;
         margin-right: 5px; } }
   @media (max-width: 1200px) {
-    .ingregients__icons {
+    .ingredients__icons {
       justify-content: center; } }
+
+.menu {
+  background-image: url(../img/menu-bg.jpg);
+  background-repeat: repeat;
+  background-position: center; }
+
+.menu__wrapper {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1250px;
+  display: flex;
+  padding-top: 105px;
+  padding-bottom: 30px;
+  padding-left: 25px;
+  padding-right: 25px; }
+  @media (max-width: 1200px) {
+    .menu__wrapper {
+      padding-left: 40px;
+      padding-right: 40px; } }
+  @media (max-width: 768px) {
+    .menu__wrapper {
+      padding-left: 30px;
+      padding-right: 30px; } }
+  @media (max-width: 480px) {
+    .menu__wrapper {
+      padding-left: 15px;
+      padding-right: 15px; } }
+  @media (max-width: 992px) {
+    .menu__wrapper {
+      flex-direction: column; } }
+
+.menu__column {
+  padding: 0 75px;
+  flex-basis: 450px; }
+  @media (max-width: 1200px) {
+    .menu__column {
+      padding: 0 40px; } }
+  @media (max-width: 992px) {
+    .menu__column {
+      padding: 0 75px;
+      flex-basis: inherit; } }
+  @media (max-width: 768px) {
+    .menu__column {
+      padding: 0 20px; } }
+
+.menu__category {
+  margin-bottom: 50px; }
+
+.menu__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 55px;
+  font-size: 36px;
+  font-weight: normal;
+  color: #cc9900;
+  text-align: center; }
+  .menu__title::after {
+    content: '';
+    position: absolute;
+    width: 247px;
+    height: 24px;
+    background: url("/img/divider-gold.png");
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -35px; }
+
+.dish {
+  padding: 5px 10px;
+  margin-bottom: 15px; }
+
+.dish--special {
+  position: relative;
+  border: 1px solid #cc9900; }
+  .dish--special::before {
+    content: 'Special';
+    position: absolute;
+    right: -1px;
+    top: 0;
+    transform: translateY(-100%);
+    padding: 3px 12px;
+    background-color: #c89f2d;
+    font-size: 14px;
+    color: #fff; }
+
+.dish__wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'YesevaOne', serif;
+  font-size: 21px;
+  line-height: 24px;
+  color: #c89f2d;
+  border-bottom: 1px solid #cc9900; }
+
+.dish__title {
+  margin: 5px 0;
+  font-weight: normal; }
+
+.dish__price {
+  align-self: center;
+  margin: 5px 0;
+  padding-left: 10px; }
+
+.dish__descr {
+  margin: 10px 0; }
 
 body {
   font-family: 'Lato', Arial, Helvetica, sans-serif;

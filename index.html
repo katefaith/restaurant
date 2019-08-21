@@ -1,89 +1,214 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page Title</title>
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
-    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css" />
-  </head>
+<html lang="en">
 
-  <body>
-    <header class="page-header">
-      <div class="page-header__wpapper">
-        <div class="page-header__nav">
-          <img class="page-header__logo" src="img/logo.png" alt="logo" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Title</title>
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css" />
+</head>
 
-          <nav class="page-header__menu  nav-menu">
-            <a class="nav-menu__link" href="#">Home</a>
-            <a class="nav-menu__link" href="#about">About</a>
-            <a class="nav-menu__link" href="#ingredients">ingredients</a>
-            <a class="nav-menu__link" href="">Menu</a>
-            <a class="nav-menu__link" href="">Reviews</a>
-            <a class="nav-menu__link" href="">Reservations</a>
-          </nav>
-          <button class="nav-menu__toggle">&#9776;</button>
+<body>
+  <header class="page-header">
+    <div class="page-header__wpapper">
+      <div class="page-header__nav">
+        <img class="page-header__logo" src="img/logo.png" alt="logo" />
 
-          <div class="page-heade__socials  socials">
-            <a class="socials__item" href="https://twitter.com" target="_blank"
-              ><i class="fa fa-twitter"></i
-            ></a>
-            <a
-              class="socials__item"
-              href="https://www.youtube.com/"
-              target="_blank"
-              ><i class="fa fa-youtube"></i
-            ></a>
-            <a class="socials__item" href="https://facebook.com" target="_blank"
-              ><i class="fa fa-facebook"></i
-            ></a>
+        <nav class="page-header__menu  nav-menu">
+          <a class="nav-menu__link" href="#">Home</a>
+          <a class="nav-menu__link" href="#about">About</a>
+          <a class="nav-menu__link" href="#ingredients">ingredients</a>
+          <a class="nav-menu__link" href="#menu">Menu</a>
+          <a class="nav-menu__link" href="">Reviews</a>
+          <a class="nav-menu__link" href="">Reservations</a>
+        </nav>
+        <button class="nav-menu__toggle">&#9776;</button>
+
+        <div class="page-heade__socials  socials">
+          <a class="socials__item" href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a class="socials__item" href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>
+          <a class="socials__item" href="https://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-header__promo">
+      <h1 class="page-header__title">
+        the right ingredients for the right food
+      </h1>
+      <div class="page-header__btns">
+        <a class="btn" href="#">Book a table</a>
+        <a class="btn" href="#">See the menu</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="page-main__about  about" id="about">
+      <div class="about__wrapper">
+        <div class="about__info">
+          <h2 class="about__title">Just the right food</h2>
+          <p class="about__text">
+            If you’ve been to one of our restaurants, you’ve seen – and tasted
+            – what keeps our customers coming back for more. Perfect materials
+            and freshly baked food, delicious Lambda cakes, muffins, and
+            gourmet coffees make us hard to resist! Stop in today and check us
+            out!
+          </p>
+          <img class="about__cook" src="img/cook.png" alt="cook" width="219" height="221" />
+        </div>
+      </div>
+    </section>
+
+    <section class="page-main__ingredients  ingredients" id="ingredients">
+      <div class="ingredients__wrapper">
+        <div class="ingredients__info">
+          <h2 class="ingredients__title">Fine ingredients</h2>
+          <p class="ingredients__text">If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps
+            our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,
+            muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!</p>
+          <div class="ingredients__icons">
+            <img src="img/icon-ingredients-1.png" alt="ingredients" width="110" height="110" />
+            <img src="img/icon-ingredients-2.png" alt="ingredients" width="110" height="110" />
+            <img src="img/icon-ingredients-3.png" alt="ingredients" width="110" height="110" />
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="page-header__promo">
-        <h1 class="page-header__title">
-          the right ingredients for the right food
-        </h1>
-        <div class="page-header__btns">
-          <a class="btn" href="#">Book a table</a>
-          <a class="btn" href="#">See the menu</a>
-        </div>
-      </div>
-    </header>
+    <section class="page-main__menu  menu" id="menu">
+      <div class="menu__wrapper">
+        <div class="menu__column">
 
-    <main class="page-main">
-      <section class="page-main__about  about"  id="about">
-        <div class="about__wrapper">
-          <div class="about__info">
-            <h2 class="about__title">Just the right food</h2>
-            <p class="about__text">
-              If you’ve been to one of our restaurants, you’ve seen – and tasted
-              – what keeps our customers coming back for more. Perfect materials
-              and freshly baked food, delicious Lambda cakes, muffins, and
-              gourmet coffees make us hard to resist! Stop in today and check us
-              out!
-            </p>
-            <img class="about__cook" src="img/cook.png" alt="cook"  width="219" height="221" />
+          <div class="menu__category">
+            <h3 class="menu__title">Appetisers</h3>
+
+            <div class="menu__dish  dish">
+              <div class="dish__wrapper">
+                <h4 class="dish__title">Tzatsiki</h4>
+                <p class="dish__price">$3.99</p>
+              </div>
+              <p class="dish__descr">Refreshing traditional cucumber and garlic yoghurt dip.</p>
+            </div>
+
+            <div class="menu__dish  dish">
+              <div class="dish__wrapper">
+                <h4 class="dish__title">Aubergine Salad
+                </h4>
+                <p class="dish__price">$5.50</p>
+              </div>
+              <p class="dish__descr">Pureed eggplant, garlic, green paper and tomato dip.</p>
+            </div>
+
+            <div class="menu__dish  dish">
+              <div class="dish__wrapper">
+                <h4 class="dish__title">Aubergine Salad
+                </h4>
+                <p class="dish__price">$5.50</p>
+              </div>
+              <p class="dish__descr">Pureed eggplant, garlic, green paper and tomato dip.</p>
+            </div>
+
           </div>
-        </div>
-      </section>
 
-      <section class="page-main__ingredients  ingredients" id="ingredients">
-        <div class="ingredients__wrapper">
-          <div class="ingredients__info">
-            <h2 class="ingredients__title">Fine ingredients</h2>
-            <p class="ingredients__text">If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!</p>
-            <div class="ingredients__icons">
-              <img src="img/icon-ingredients-1.png" alt="ingredients"  width="110" height="110" />
-              <img src="img/icon-ingredients-2.png" alt="ingredients"  width="110" height="110" />
-              <img src="img/icon-ingredients-3.png" alt="ingredients"  width="110" height="110" />
+          <div class="menu__category">
+            <h3 class="menu__title">Salads</h3>
+
+            <div class="menu__dish  dish">
+              <div class="dish__wrapper">
+                <h4 class="dish__title">Olive Special</h4>
+                <p class="dish__price">$5.99</p>
+              </div>
+              <p class="dish__descr">Refreshing traditional cucumber and garlic yoghurt dip.</p>
+            </div>
+
+            <div class="menu__dish  dish  dish--special">
+              <div class="dish__wrapper">
+                <h4 class="dish__title">Greek Salad</h4>
+                <p class="dish__price">$5.50</p>
+              </div>
+              <p class="dish__descr">Pureed eggplant, garlic, green paper and tomato dip.</p>
+            </div>
+
+            <div class="menu__dish  dish">
+              <div class="dish__wrapper">
+                <h4 class="dish__title">Gusto Salad</h4>
+                <p class="dish__price">$5.25</p>
+              </div>
+              <p class="dish__descr">Pureed eggplant, garlic, green paper and tomato dip.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="menu__column">
+          <div class="menu__category">
+            <h3 class="menu__title">Starters</h3>
+
+            <div class="menu__dish  dish">
+              <div class="dish__wrapper">
+                <h4 class="dish__title">Haloumi</h4>
+                <p class="dish__price">$3.99</p>
+              </div>
+              <p class="dish__descr">Refreshing traditional cucumber and garlic yoghurt dip.</p>
+            </div>
+
+            <div class="menu__dish  dish">
+              <div class="dish__wrapper">
+                <h4 class="dish__title">Spinach Pie</h4>
+                <p class="dish__price">$5.50</p>
+              </div>
+              <p class="dish__descr">Pureed eggplant, garlic, green paper and tomato dip.</p>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
 
-    <footer class="page-footer"></footer>
-  </body>
+          <div class="menu__category">
+            <h3 class="menu__title">Main Dishes</h3>
+
+            <div class="menu__dish  dish">
+              <div class="dish__wrapper">
+                <h4 class="dish__title">Cornish Mackerel</h4>
+                <p class="dish__price">$3.99</p>
+              </div>
+              <p class="dish__descr">Refreshing traditional cucumber and garlic yoghurt dip.</p>
+            </div>
+
+            <div class="menu__dish  dish  dish--special">
+              <div class="dish__wrapper">
+                <h4 class="dish__title">Roast Lamb</h4>
+                <p class="dish__price">$5.50</p>
+              </div>
+              <p class="dish__descr">Pureed eggplant, garlic, green paper and tomato dip.</p>
+            </div>
+
+            <div class="menu__dish  dish">
+              <div class="dish__wrapper">
+                <h4 class="dish__title">Fried Chicken</h4>
+                <p class="dish__price">$5.25</p>
+              </div>
+              <p class="dish__descr">Pureed eggplant, garlic, green paper and tomato dip.</p>
+            </div>
+
+            <div class="menu__dish  dish">
+              <div class="dish__wrapper">
+                <h4 class="dish__title">Pastitsio</h4>
+                <p class="dish__price">$5.99</p>
+              </div>
+              <p class="dish__descr">Refreshing traditional cucumber and garlic yoghurt dip.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="page-footer"></footer>
+</body>
+
 </html>

@@ -1,0 +1,62 @@
+.menu {
+    background-image: url(../img/menu-bg.jpg);
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.menu__wrapper {
+    @include wrapper;
+    display: flex;
+    padding-top: 105px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    @media (max-width: $bp-l) {
+        flex-direction: column;
+    }
+}
+
+.menu__column {
+    padding: 0 75px;
+    flex-basis: 450px;
+
+    @media (max-width: $bp-xl) {
+        padding: 0 40px;
+    }
+
+    @media (max-width: $bp-l) {
+        padding: 0 75px;
+        flex-basis: inherit;
+    }
+
+    @media (max-width: $bp-m) {
+        padding: 0 20px;
+    }
+}
+
+.menu__category {
+    margin-bottom: 50px;
+}
+
+.menu__title {
+    position: relative;
+    margin: 0;
+    margin-bottom: 55px;
+    font-size: 36px;
+    font-weight: normal;
+    color: #cc9900;
+    text-align: center;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 247px;
+        height: 24px;
+        background: url('/img/divider-gold.png');
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -35px;
+    }
+}
+

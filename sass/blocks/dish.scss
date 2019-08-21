@@ -1,0 +1,46 @@
+.dish {
+    padding: 5px 10px;
+    margin-bottom: 15px;
+}
+
+.dish--special {
+    position: relative;
+    border: 1px solid #cc9900;
+
+    &::before {
+        content: 'Special';
+        position: absolute;
+        right: -1px;
+        top: 0;
+        transform: translateY(-100%);
+        padding: 3px 12px;
+        background-color: #c89f2d;
+        font-size: 14px;
+        color: #fff;
+    }
+}
+
+.dish__wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'YesevaOne', serif;
+    font-size: 21px;
+    line-height: 24px;
+    color: #c89f2d;
+    border-bottom: 1px solid #cc9900;
+}
+
+.dish__title {
+    margin: 5px 0;
+    font-weight: normal;
+}
+
+.dish__price {
+    align-self: center;
+    margin: 5px 0;
+    padding-left: 10px;
+}
+
+.dish__descr {
+    margin: 10px 0;
+}

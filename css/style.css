@@ -323,7 +323,7 @@ template {
 
 @font-face {
   font-family: "GentiumBookBasic";
-  src: url("../fonts/GentiumBookBasic-Regular") format("TrueType");
+  src: url("../fonts/GentiumBookBasic-Regular.ttf") format("TrueType");
   font-style: normal;
   font-weight: normal; }
 
@@ -832,6 +832,89 @@ template {
 
 .dish__descr {
   margin: 10px 0; }
+
+.review {
+  background-image: url(../img/reviews-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff; }
+
+.review__wrapper {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1250px;
+  display: flex; }
+  @media (max-width: 1200px) {
+    .review__wrapper {
+      padding-left: 40px;
+      padding-right: 40px; } }
+  @media (max-width: 768px) {
+    .review__wrapper {
+      padding-left: 30px;
+      padding-right: 30px; } }
+  @media (max-width: 480px) {
+    .review__wrapper {
+      padding-left: 15px;
+      padding-right: 15px; } }
+
+.review__item {
+  max-width: 650px;
+  margin: 100px auto;
+  padding: 75px 60px;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center; }
+  @media (max-width: 480px) {
+    .review__item {
+      margin: 40px auto;
+      padding: 40px; } }
+
+.review__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 60px;
+  font-size: 36px;
+  font-weight: normal; }
+  .review__title::after {
+    content: '';
+    position: absolute;
+    width: 247px;
+    height: 24px;
+    background: url("/img/divider-white.png");
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -40px; }
+
+.review__text {
+  position: relative;
+  margin: 0;
+  margin-bottom: 30px;
+  font-family: 'GentiumBookBasic', serif;
+  font-size: 25px;
+  line-height: 1.8; }
+  @media (max-width: 768px) {
+    .review__text {
+      font-size: 18px; } }
+  .review__text::before {
+    content: '\275B\275B';
+    position: absolute;
+    font-family: 'Georgia' serif;
+    font-size: 64px;
+    line-height: 0.7;
+    opacity: 0.6;
+    transform: translateX(-120%); }
+    @media (max-width: 768px) {
+      .review__text::before {
+        font-size: 32px; } }
+
+.review__author {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 18px; }
+  @media (max-width: 768px) {
+    .review__author {
+      font-size: 16px; } }
 
 body {
   font-family: 'Lato', Arial, Helvetica, sans-serif;

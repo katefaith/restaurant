@@ -31,10 +31,15 @@
         position: absolute; // можно по-другому?
         display: block;
         margin-top: 52px; 
+        right: 40px;
         background: none;
         border: none;
         color: #ffffff;
         cursor: pointer;
+
+        @media (max-width: $bp-s) {
+            right: 20px;
+        }
     }
 }
 

@@ -24,6 +24,10 @@
     }
 }
 
+.nav-menu--closed {
+    display: none;
+}
+
 .nav-menu__toggle {
     display: none;
 
@@ -36,10 +40,10 @@
         border: none;
         color: #ffffff;
         cursor: pointer;
+    }
 
-        @media (max-width: $bp-s) {
-            right: 20px;
-        }
+    @media (max-width: $bp-s) {
+        right: 20px;
     }
 }
 

@@ -1,12 +1,4 @@
 .socials {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 32px;
-
-    @media (max-width: $bp-xl) {
-        margin-right: 0;
-    }
 }
 
 .socials__item {
@@ -29,4 +21,13 @@
             color: #dab33e;
         }
     }
+}
+
+.socials__item--white {
+    color: #ffffff;
+
+    &:hover {
+        color: #dab33e;
+    }
+
 }

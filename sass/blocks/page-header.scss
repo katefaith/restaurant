@@ -44,6 +44,15 @@
 }
 
 .page-heade__socials {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 32px;
+
+    @media (max-width: $bp-xl) {
+        margin-right: 0;
+    }
 
     @media (max-width: $bp-l) {
         width: 100%;

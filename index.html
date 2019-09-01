@@ -18,7 +18,7 @@
         <nav class="page-header__menu  nav-menu">
           <a class="nav-menu__link" href="#">Home</a>
           <a class="nav-menu__link" href="#about">About</a>
-          <a class="nav-menu__link" href="#ingredients">ingredients</a>
+          <a class="nav-menu__link" href="#ingredients">Ingredients</a>
           <a class="nav-menu__link" href="#menu">Menu</a>
           <a class="nav-menu__link" href="#reviews">Reviews</a>
           <a class="nav-menu__link" href="#reservations">Reservations</a>
@@ -213,7 +213,7 @@
       </div>
     </section>
 
-    <section class="page-main__reservations  reservations">
+    <section class="page-main__reservations  reservations" id="reservations">
       <div class="reservations__wrapper">
 
         <div class="reservations__img">
@@ -234,7 +234,7 @@
             <div class="form__wrapper">
               <div class="form__column">
                 <label class="form__label" for="name">Name</label>
-                <input class="form__field" id="name" type="text" required>
+                <input class="form__field" id="name" type="text" placeholder="your name *" required>
 
                 <label class="form__label" for="date">Date</label>
                 <input class="form__field" id="date" type="date" required>
@@ -256,7 +256,7 @@
                   <option value="7">7</option>
                   <option value="8">8</option>
                 </select>
-                
+
               </div>
             </div>
 
@@ -270,7 +270,45 @@
 
   </main>
 
-  <footer class="page-footer"></footer>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+
+      <div class="page-footer__colunm">
+        <h3 class="page-footer__title">About Us</h3>
+        <p class="page-footer__info">Lambda's new and expanded Chelsea location represents a truly authentic
+          <b>Greek</b> patisserie, featuring breakfasts of fresh croissants and steaming bowls of café Lambda the best
+          restaurant in town</p>
+      </div>
+
+      <div class="page-footer__colunm">
+        <h3 class="page-footer__title">Openning Hours</h3>
+        <p class="page-footer__info">
+          <b>Mon-Thu:</b> 7:00am-8:00pm <br />
+          <b>Fri-Sun:</b> 7:00am-10:00pm</p>
+        <div class="page-footer__payment">
+          <i class="fa fa-cc-amex" aria-hidden="true"></i>
+          <i class="fa fa-cc-paypal" aria-hidden="true"></i>
+          <i class="fa fa-cc-visa" aria-hidden="true"></i>
+          <i class="fa fa-cc-discover" aria-hidden="true"></i>
+        </div>
+      </div>
+
+      <div class="page-footer__colunm">
+        <h3 class="page-footer__title">Our Location</h3>
+        <p class="page-footer__info">
+          19th Paradise Street Sitia <br />
+          128 Meserole Avenue</p>
+        <div class="page-footer__socials  socials">
+          <a class="socials__item  socials__item--white" href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a class="socials__item  socials__item--white" href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a>
+          <a class="socials__item  socials__item--white" href="https://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
+
 </body>
 
 </html>

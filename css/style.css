@@ -377,10 +377,18 @@ template {
     width: 100%;
     order: 1; } }
 
-@media (max-width: 992px) {
-  .page-heade__socials {
-    width: 100%;
-    order: 2; } }
+.page-heade__socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 32px; }
+  @media (max-width: 1200px) {
+    .page-heade__socials {
+      margin-right: 0; } }
+  @media (max-width: 992px) {
+    .page-heade__socials {
+      width: 100%;
+      order: 2; } }
 
 .page-header__promo {
   box-sizing: border-box;
@@ -451,7 +459,6 @@ template {
   justify-content: flex-end;
   flex-grow: 1;
   font-family: "GentiumBookBasic", serif;
-  font-weight: bold;
   font-size: 21px;
   line-height: 1.2; }
   .nav-menu--closed {
@@ -516,15 +523,6 @@ template {
       background-color: rgba(0, 0, 0, 0.3);
       text-decoration: none; } }
 
-.socials {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 32px; }
-  @media (max-width: 1200px) {
-    .socials {
-      margin-right: 0; } }
-
 .socials__item {
   color: #dab33e;
   font-size: 21px;
@@ -540,6 +538,11 @@ template {
     @media (max-width: 992px) {
       .socials__item:hover {
         color: #dab33e; } }
+
+.socials__item--white {
+  color: #ffffff; }
+  .socials__item--white:hover {
+    color: #dab33e; }
 
 .btn {
   padding: 18px 50px;
@@ -1055,6 +1058,76 @@ template {
   .form__field:focus {
     outline: none;
     border: 1px solid #c9a131; }
+
+.page-footer {
+  background-color: #191919;
+  color: #fefefe; }
+
+.page-footer__wrapper {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1250px;
+  display: flex;
+  padding: 60px 25px 20px; }
+  @media (max-width: 1200px) {
+    .page-footer__wrapper {
+      padding-left: 40px;
+      padding-right: 40px; } }
+  @media (max-width: 768px) {
+    .page-footer__wrapper {
+      padding-left: 30px;
+      padding-right: 30px; } }
+  @media (max-width: 480px) {
+    .page-footer__wrapper {
+      padding-left: 15px;
+      padding-right: 15px; } }
+  @media (max-width: 992px) {
+    .page-footer__wrapper {
+      flex-wrap: wrap; } }
+
+.page-footer__colunm {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  text-align: center;
+  margin: 0 15px 40px; }
+  @media (max-width: 992px) {
+    .page-footer__colunm {
+      width: 100%; } }
+
+.page-footer__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 21px;
+  line-height: 1.2; }
+  .page-footer__title::before {
+    content: '';
+    position: absolute;
+    width: 247px;
+    height: 24px;
+    background: url("/img/divider-white.png");
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -35px; }
+
+.page-footer__info {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: 'OpenSans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5; }
+
+.page-footer__payment {
+  margin-top: auto;
+  margin-bottom: 15px; }
+  .page-footer__payment i {
+    margin: 0 5px; }
+
+.page-footer__socials {
+  margin-top: auto;
+  margin-bottom: 15px; }
 
 body {
   font-family: 'Lato', Arial, Helvetica, sans-serif;

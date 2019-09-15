@@ -452,6 +452,7 @@ template {
           align-items: center; } }
 
 .nav-menu {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -490,6 +491,11 @@ template {
   @media (max-width: 480px) {
     .nav-menu__toggle {
       right: 20px; } }
+  .nav-menu__toggle:before {
+    content: '\2716'; }
+
+.nav-menu--closed + .nav-menu__toggle:before {
+  content: '\2630'; }
 
 .nav-menu__link {
   position: relative;

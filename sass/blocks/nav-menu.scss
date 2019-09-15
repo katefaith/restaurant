@@ -1,4 +1,5 @@
 .nav-menu {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -44,6 +45,17 @@
 
     @media (max-width: $bp-s) {
         right: 20px;
+    }
+
+    &:before {
+        content: '\2716';
+    }
+}
+
+.nav-menu--closed + .nav-menu__toggle {
+
+    &:before {
+        content: '\2630';
     }
 }
 

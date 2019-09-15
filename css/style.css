@@ -365,26 +365,23 @@ template {
 
 .page-header__logo {
   margin-bottom: 10px;
-  margin-left: 32px; }
+  margin-left: 32px;
+  -ms-grid-row-align: flex-start;
+      align-items: flex-start; }
   @media (max-width: 1200px) {
     .page-header__logo {
       margin-left: 0; } }
 
-@media (max-width: 992px) {
-  .page-header__menu {
-    width: 100%;
-    order: 1; } }
-
-.page-heade__socials {
+.page-header__socials {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-right: 32px; }
   @media (max-width: 1200px) {
-    .page-heade__socials {
+    .page-header__socials {
       margin-right: 0; } }
   @media (max-width: 992px) {
-    .page-heade__socials {
+    .page-header__socials {
       width: 100%;
       order: 2; } }
 
@@ -455,26 +452,32 @@ template {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   flex-grow: 1;
+  justify-content: flex-end; }
+  @media (max-width: 992px) {
+    .nav-menu {
+      width: 100%;
+      order: 1;
+      justify-content: center; } }
+
+.nav-menu__items {
+  display: flex;
+  align-items: stretch;
   font-family: "GentiumBookBasic", serif;
   font-size: 21px;
   line-height: 1.2; }
-  .nav-menu--closed {
-    display: none; }
   @media (max-width: 1200px) {
-    .nav-menu {
+    .nav-menu__items {
       font-size: 18px; } }
   @media (max-width: 992px) {
-    .nav-menu {
-      -ms-grid-row-align: stretch;
-          align-items: stretch;
+    .nav-menu__items {
       flex-direction: column;
       margin-bottom: 15px;
       text-align: center; } }
 
-.nav-menu--closed {
-  display: none; }
+@media (max-width: 992px) {
+  .nav-menu__items--closed {
+    display: none; } }
 
 .nav-menu__toggle {
   display: none; }
@@ -482,8 +485,8 @@ template {
     .nav-menu__toggle {
       position: absolute;
       display: block;
-      margin-top: 52px;
-      right: 40px;
+      right: 0;
+      top: -68px;
       background: none;
       border: none;
       color: #ffffff;
@@ -494,7 +497,7 @@ template {
   .nav-menu__toggle:before {
     content: '\2716'; }
 
-.nav-menu--closed + .nav-menu__toggle:before {
+.nav-menu__items--closed + .nav-menu__toggle:before {
   content: '\2630'; }
 
 .nav-menu__link {
@@ -1013,7 +1016,7 @@ template {
     margin-bottom: 10px;
     line-height: 1.5; }
 
-.reservation__btn {
+.reservations__btn {
   padding: 8px 60px 10px;
   align-self: center;
   border: none;

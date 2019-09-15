@@ -27,21 +27,14 @@
 .page-header__logo {
     margin-bottom: 10px;
     margin-left: 32px;
+    align-items: flex-start;
 
     @media (max-width: $bp-xl) {
         margin-left: 0;
     }
 }
 
-.page-header__menu {
-
-    @media (max-width: $bp-l) {
-        width: 100%;
-        order: 1;
-    }
-}
-
-.page-heade__socials {
+.page-header__socials {
     
     display: flex;
     justify-content: center;

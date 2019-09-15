@@ -1,32 +1,42 @@
 .nav-menu {
     position: relative;
+    
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     flex-grow: 1;
+    justify-content: flex-end;
+
+    @media (max-width: $bp-l) {
+        width: 100%;
+        order: 1;
+        justify-content: center;
+    }
+}
+
+.nav-menu__items {
+    display: flex;
+    align-items: stretch;
 
     font-family: "GentiumBookBasic", serif;
     font-size: 21px;
     line-height: 1.2;
 
-    &--closed {
-        display: none;
-    }
 
     @media (max-width: $bp-xl) {
         font-size: 18px;
     }
 
     @media (max-width: $bp-l) {
-        align-items: stretch;
         flex-direction: column;
         margin-bottom: 15px;
         text-align: center;
     }
 }
 
-.nav-menu--closed {
-    display: none;
+.nav-menu__items--closed {
+    @media (max-width: $bp-l) {
+        display: none;
+    }
 }
 
 .nav-menu__toggle {
@@ -35,8 +45,8 @@
     @media (max-width: $bp-l) {
         position: absolute; // можно по-другому?
         display: block;
-        margin-top: 52px; 
-        right: 40px;
+        right: 0;
+        top: -68px;
         background: none;
         border: none;
         color: #ffffff;
@@ -52,7 +62,7 @@
     }
 }
 
-.nav-menu--closed + .nav-menu__toggle {
+.nav-menu__items--closed + .nav-menu__toggle {
 
     &:before {
         content: '\2630';

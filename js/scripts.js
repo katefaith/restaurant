@@ -5,7 +5,7 @@ const menuBtn = document.querySelector('.nav-menu__toggle');
 menuBtn.addEventListener('click', menuToggle);
 
 function menuToggle() {
-    const navMenu = document.querySelector('.nav-menu');
+    const menuItems = document.querySelector('.nav-menu__items');
 
-    navMenu.classList.toggle("nav-menu--closed");
+    menuItems.classList.toggle("nav-menu__items--closed");
 }

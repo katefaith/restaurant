@@ -1,4 +1,5 @@
 node_modules/
+build/
 img/design/
 .DS_Store
 Thumbs.db

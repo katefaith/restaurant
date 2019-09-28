@@ -9,6 +9,9 @@ var server = require("browser-sync");
 var svgstore = require("gulp-svgstore");
 var svgmin = require("gulp-svgmin");
 var rename = require("gulp-rename");
+var imagemin = require("gulp-imagemin");
+var copy = require("gulp-copy");
+var rimraf = require("rimraf");
 
 gulp.task("style", function() {
   gulp.src("sass/style.scss")
@@ -23,31 +26,51 @@ gulp.task("style", function() {
         "last 2 Edge versions"
       ]})
     ]))
-    .pipe(gulp.dest("css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(server.reload({stream: true}));
 });
 
-gulp.task("symbols", function() {
-  return gulp.src("img/**/*.svg")
-  .pipe(plumber())
-  .pipe(svgmin())
-  .pipe(gulp.dest("img"))
-  .pipe(svgstore({
-    inlineSvg: true
-  }))
-
-  .pipe(rename("symbols.svg"))
-  .pipe(gulp.dest("img"));
+gulp.task("images", function() {
+  return gulp.src("img/**/*.{png,jpg,gif}")
+    .pipe(plumber())
+    .pipe(imagemin({
+      optimizationLevel: 3,
+      progressive: true
+    }))
+    .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("serve", ["style", "symbols"], function() {
+gulp.task("copies:build", function() {
+  return gulp.src(["fonts/**/*.ttf","font-awesome/**/*.{css,otf,eot,svg,ttf,woff,woff2}" , "img/**/*.{jpg,svg}", "js/**/*.js", "*.html"])
+  .pipe(copy("build/"));
+});
+
+gulp.task("copies:html", function() {
+  return gulp.src(["*.html"])
+  .pipe(copy("build/"))
+  .pipe(server.reload({stream: true}));
+});
+
+gulp.task("delete", function(cb){
+  rimraf("./build", cb);
+});
+
+gulp.task("build", ["delete"], function() {
+  gulp.start(
+    "copies:build",
+    "style",
+    "images"
+  );
+});
+
+gulp.task("serve", function() {
   server.init({
-    server: ".",
+    server: "./build",
     notify: false,
     open: true,
     ui: false
   });
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("*.html").on("change", server.reload);
+  gulp.watch("*.html", ["copies:html"]);
 });
